@@ -998,7 +998,7 @@ a:hover {
 }
 
 .btn.btn-lg {
-  font-size: 1.25rem;
+ font-size: 1.25rem;
   padding: 0.8rem 1.4rem;
 }
 
@@ -1109,7 +1109,8 @@ a:hover {
 }
 
 form {
-  width: 100%;
+  width: 250%;
+  display: block;
 }
 
 form .form-group {
@@ -1120,7 +1121,7 @@ form .form-group {
 
 form .form-input,
 form .form-textarea {
-  display: block;
+  display: flex;
 }
 
 form select {
@@ -1134,20 +1135,20 @@ form select {
 
 form label,
 form .form-label {
-  display: inline-block;
+  display: inline-center;
   font-size: 1.2rem;
   margin: 0.625rem 0 0.25rem 0.3rem;
 }
 
 form .form-input {
-  width: 100%;
+  width: 50%;
   padding: 0.75rem;
   color: #1a1a1a;
   background-color: #ffffff;
   margin: 0.625rem 0;
   font-size: 1.2rem;
-  border: 1px solid #484848;
-  border-radius: 0.3rem;
+  border: 10px solid #484848;
+  border-radius: 1.3rem;
 }
 
 form .form-input.form-input-squared {
