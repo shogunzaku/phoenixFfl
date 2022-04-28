@@ -1,6 +1,6 @@
-const { Painting } = require('../models');
+const { Player } = require('../models');
 
-const paintingdata = [
+const Playerdata = [
   {
     title: 'Blossoming Apricot',
     artist: 'LedyX',
@@ -80,6 +80,6 @@ const paintingdata = [
   },
 ];
 
-const seedPaintings = () => Painting.bulkCreate(paintingdata);
+const seedPlayers = () => Player.bulkCreate(Playerdata);
 
-module.exports = seedPaintings;
+module.exports = seedPlayers;
