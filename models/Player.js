@@ -34,6 +34,13 @@ Player.init(
       validate: {
         len: [6],
       },
+      team_id: {
+        type: DataTypes.INTEGER,
+        references: {
+          model: 'team',
+          key: 'id',
+        },
+      },
     },
   },
   {

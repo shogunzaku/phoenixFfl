@@ -1,3 +1,3 @@
-DROP DATABASE IF EXISTS teams_db;
+DROP DATABASE IF EXISTS flagfootball_db;
 
-CREATE DATABASE teams_db;
+CREATE DATABASE flagfootball_db;
