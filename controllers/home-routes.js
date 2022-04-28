@@ -1,10 +1,10 @@
 const router = require('express').Router();
-const { Gallery, Painting } = require('../models');
+const { Team, Painting } = require('../models');
 
-// GET all galleries for homepage
+// GET all teams for homepage
 router.get('/', async (req, res) => {
   try {
-    const dbGalleryData = await Gallery.findAll({
+    const flagfootballdb = await Team.findAll({
       include: [
         {
           model: Painting,
@@ -13,11 +13,11 @@ router.get('/', async (req, res) => {
       ],
     });
 
-    const galleries = dbGalleryData.map((gallery) =>
-      gallery.get({ plain: true })
+    const teams = dbflagfootball.map((Team) =>
+      Team.get({ plain: true })
     );
     res.render('homepage', {
-      galleries,
+      teams,
       loggedIn: req.session.loggedIn,
     });
   } catch (err) {
@@ -26,10 +26,10 @@ router.get('/', async (req, res) => {
   }
 });
 
-// GET one gallery
-router.get('/gallery/:id', async (req, res) => {
+// GET one Team
+router.get('/Team/:id', async (req, res) => {
   try {
-    const dbGalleryData = await Gallery.findByPk(req.params.id, {
+    const dbflagfootball = await Team.findByPk(req.params.id, {
       include: [
         {
           model: Painting,
@@ -45,8 +45,8 @@ router.get('/gallery/:id', async (req, res) => {
       ],
     });
 
-    const gallery = dbGalleryData.get({ plain: true });
-    res.render('gallery', { gallery, loggedIn: req.session.loggedIn });
+    const Team = dbflagfootball.get({ plain: true });
+    res.render('Team', { Team, loggedIn: req.session.loggedIn });
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
