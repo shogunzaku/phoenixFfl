@@ -2,81 +2,108 @@ const { Player } = require('../models');
 
 const Playerdata = [
   {
-    title: 'Blossoming Apricot',
-    artist: 'LedyX',
-    exhibition_date: 'March 30, 2018',
-    gallery_id: 1,
-    filename: '01-blossoming-apricot.jpg',
-    description:
-      'Branches with pink apricot blossoms against a blue background.',
+    user_name: 'Don_gothands',
+    email: 'don@don.com',
+    password: 'phx12345',
+    team_id: 1,
+    postion: 'wr'
+   
   },
   {
-    title: 'Cosmos Flowers',
-    artist: 'WStudio',
-    exhibition_date: 'May 05, 2017',
-    gallery_id: 1,
-    filename: '02-cosmos-flowers.jpg',
-    description: 'Pink cosmos flowers against a blue sky.',
+    user_name: 'Alex.30',
+    email: 'alex@alex30.com',
+    password: 'phx12345',
+    team_id: 1,
+    
+   
   },
   {
-    title: 'Sand + Sea = Summer',
-    artist: 'S_Photo',
-    exhibition_date: 'June 10, 2019',
-    gallery_id: 2,
-    filename: '03-sand-sea-summer.jpg',
-    description: 'Sandy beach with the blue sea and sky in the background.',
+    user_name: 'Taylor_gotspeed',
+    email: 'taylor@taylor.com',
+    password: 'phx12345',
+    team_id: 1,
+    
+   
   },
   {
-    title: 'Beach Chairs',
-    artist: 'icemanphotos',
-    exhibition_date: 'July 4, 2020',
-    gallery_id: 2,
-    filename: '04-beach-chairs.jpg',
-    description: 'Two beach chairs under a beach umbrella on the beach.',
+    user_name: 'Paul_enforcer',
+    email: 'paul@paul.com',
+    password: 'phx12345',
+    team_id: 1,
+  
+   
   },
   {
-    title: 'Beach Sunrise',
-    artist: 'VRstudio',
-    exhibition_date: 'August 14, 2016',
-    gallery_id: 2,
-    filename: '05-beach-sunrise.jpg',
-    description: 'Sun setting in the horizon with waves lapping the shore.',
+    user_name: 'Ant_thelockdown',
+    email: 'ant@antonio.com',
+    password: 'phx12345',
+    team_id: 1,
+    
+   
   },
   {
-    title: 'Fall Colors',
-    artist: 'DrivingJack',
-    exhibition_date: 'October 15, 2018',
-    gallery_id: 3,
-    filename: '06-fall-colors.jpg',
-    description:
-      'Trees with red, orange, yellow leaves reflected on a still lake.',
+    user_name: 'Blossoming Apricot',
+    email: 'LedyX',
+    password: 'March 30, 2018',
+    team_id: 1,
+    postion: ''
+   
   },
   {
-    title: 'Autumn Mountains',
-    artist: 'Vitalii_Mamchuk',
-    exhibition_date: 'November 3, 2016',
-    gallery_id: 3,
-    filename: '07-autumn-mountains.jpg',
-    description:
-      'Mountains with red and yellow leaves against a background of hazy rolling hills.',
+    user_name: 'Blossoming Apricot',
+    email: 'LedyX',
+    password: 'March 30, 2018',
+    team_id: 1,
+    postion: ''
+   
   },
   {
-    title: 'Frozen River',
-    artist: 'Vlad Sokolovsky',
-    exhibition_date: 'December 24, 2020',
-    gallery_id: 4,
-    filename: '08-frozen-river.jpg',
-    description:
-      'Trees with white frozen branches reflected on a frozen river against a light pink sky.',
+    user_name: 'killer_james',
+    email: 'james@james.com',
+    password: 'phx12345',
+    team_id: 1,
+    
+   
   },
   {
-    title: 'Winter Home',
-    artist: 'Smit',
-    exhibition_date: 'January 20, 2018',
-    gallery_id: 4,
-    filename: '09-winter-home.jpg',
-    description:
-      'Log cabin blanketed in heavy white snow with tall snow covered pine trees in the background.',
+    user_name: 'k-watts',
+    email: 'kyle-watts@kyle.com',
+    password: 'phx12345',
+    team_id: 1,
+    
+   
+  },
+  {
+    user_name: 'the2nonlybRell',
+    email: 'rell@rell.com',
+    password: 'phx12345',
+    team_id: 1,
+    
+   
+  },
+  {
+    user_name: '_slickRick',
+    email: 'ricardo@rick.com',
+    password: 'phx12345',
+    team_id: 1,
+    
+   
+  },
+  {
+    user_name: 'super_nikki',
+    email: 'nikki@nikki.com',
+    password: 'phx12345',
+    team_id: 1,
+    
+   
+  },
+  {
+    user_name: 'hiflying_Latoya',
+    email: 'LadyX@toya.com',
+    password: 'phx12345',
+    team_id: 1,
+    
+   
   },
 ];
 
