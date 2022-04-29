@@ -1,7 +1,10 @@
 <div class="menu-container">
   <div class="card-header col-md-12 text-center">
+      <p>Youth tackle football athletes experienced a median of 378 head impacts per athlete during the season.
+Flag football athletes experienced a median of 8 eight head impacts per athlete during the season.
+These findings suggest that non-contact or flag football programs may be a safer alternative for reducing head impacts and concussion risk for youth football athletes under age 14.</p>
     <h2>
-      &#127869 Current Teams
+     Current Teams, Register to play!
     </h2>
   </div>
   {{#each teams as |team|}}
@@ -12,10 +15,7 @@
     </p>
   </div>
   <div class="col-md-5">
-    <p>
-      player:
-      {{team.username}}
-    </p>
+   
   </div>
   {{!-- <div class="col-md-3">
     🥜: {{#if team.has_nuts}} Contains nuts {{else}} No nuts {{/if}}
@@ -23,49 +23,11 @@
   {{/each}}
   <!-- This is the form for adding a new team -->
   <div class="add-team-container">
-    <h2>
-      RSVP with the team you plan to bring!
-    </h2>
-    <form class="new-team-form">
-      <label for="team_name">
-        team Name:
-      </label>
-      <br />
-      <textarea id="team_name" name="team_color" rows="2" cols="30">
-      {{team_name}}
-    </textarea>
-      <br />
-      <label for="description">
-        Description:
-      </label>
-      <br />
-      <textarea id="description" name="description" rows="5" cols="30">
-      {{description}}
-    </textarea>
-      <br />
-      <label for="guest_name">
-        Guest Name:
-      </label>
-      <br />
-      <textarea id="guest_name" name="guest_name" rows="2" cols="30">
-      {{guest_name}}
-    </textarea>
-      <br />
-      <br />
-      {{#if has_nuts}}
-      <input type="checkbox" id="has_nuts" name="has_nuts" checked />
-      {{else}}
-      <input type="checkbox" id="has_nuts" name="has_nuts" />
-      {{/if}}
-      <label for="has_nuts">
-        Check box if this team contains nuts
-      </label>
-      <br />
-      <button type="submit" value="Submit">
-        Submit
-      </button>
+    
     </form>
   </div>
 </div>
+
+
 
 <script src="/js/add-team.js"></script>
