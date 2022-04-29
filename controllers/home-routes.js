@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Team, Painting } = require('../models');
+const { Team, Player } = require('../models');
 
 // GET all teams for homepage
 router.get('/', async (req, res) => {
@@ -7,7 +7,7 @@ router.get('/', async (req, res) => {
     const flagfootballdb = await Team.findAll({
       include: [
         {
-          model: Painting,
+          model: Player,
           attributes: ['filename', 'description'],
         },
       ],

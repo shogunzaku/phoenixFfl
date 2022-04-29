@@ -2,24 +2,28 @@ const { Team } = require('../models');
 
 const Teamdata = [
   {
-    name: 'Lake Pythons',
+    team_name: 'Lake Pythons',
     team_color: 'Black and Green',
-    record: '4-0',
+    wins: 4,
+    loses:2,
   },
   {
-    name: 'The Rockets',
+    team_name: 'The Rockets',
     team_color: 'Gold and Red',
-    record: '2-2',
+    wins: 9,
+    loses:2,
   },
   {
-    name: 'The Tigers',
-    team_color: 'September 23, 2021 08:30:00',
-    record: '1-3',
+    team_name: 'The Tigers',
+    team_color: 'Orange and Black',
+    wins: 3,
+    loses: 7,
   },
   {
-    name: 'Hurricanes',
-    team_color: 'December 22, 2020 11:00:00',
-    record: '0-4',
+    team_name: 'Hurricanes',
+    team_color: 'Grey and Purple',
+    wins: 10,
+    loses:1,
   },
 ];
 

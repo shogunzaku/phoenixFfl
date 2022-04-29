@@ -2,15 +2,15 @@ const { Player } = require('../models');
 
 const Playerdata = [
   {
-    user_name: 'Don_gothands',
+    username: 'Don_gothands',
     email: 'don@don.com',
     password: 'phx12345',
     team_id: 1,
-    postion: 'wr'
+   
    
   },
   {
-    user_name: 'Alex.30',
+    username: 'Alex.30',
     email: 'alex@alex30.com',
     password: 'phx12345',
     team_id: 1,
@@ -18,7 +18,7 @@ const Playerdata = [
    
   },
   {
-    user_name: 'Taylor_gotspeed',
+    username: 'Taylor_gotspeed',
     email: 'taylor@taylor.com',
     password: 'phx12345',
     team_id: 1,
@@ -26,7 +26,7 @@ const Playerdata = [
    
   },
   {
-    user_name: 'Paul_enforcer',
+    username: 'Paul_enforcer',
     email: 'paul@paul.com',
     password: 'phx12345',
     team_id: 1,
@@ -34,7 +34,7 @@ const Playerdata = [
    
   },
   {
-    user_name: 'Ant_thelockdown',
+    username: 'Ant_thelockdown',
     email: 'ant@antonio.com',
     password: 'phx12345',
     team_id: 1,
@@ -42,23 +42,15 @@ const Playerdata = [
    
   },
   {
-    user_name: 'Blossoming Apricot',
+    username: 'Blossoming Apricot',
     email: 'LedyX',
     password: 'March 30, 2018',
     team_id: 1,
-    postion: ''
+  
    
   },
   {
-    user_name: 'Blossoming Apricot',
-    email: 'LedyX',
-    password: 'March 30, 2018',
-    team_id: 1,
-    postion: ''
-   
-  },
-  {
-    user_name: 'killer_james',
+    username: 'killer_james',
     email: 'james@james.com',
     password: 'phx12345',
     team_id: 1,
@@ -66,7 +58,7 @@ const Playerdata = [
    
   },
   {
-    user_name: 'k-watts',
+    username: 'k-watts',
     email: 'kyle-watts@kyle.com',
     password: 'phx12345',
     team_id: 1,
@@ -74,7 +66,7 @@ const Playerdata = [
    
   },
   {
-    user_name: 'the2nonlybRell',
+    username: 'the2nonlybRell',
     email: 'rell@rell.com',
     password: 'phx12345',
     team_id: 1,
@@ -82,7 +74,7 @@ const Playerdata = [
    
   },
   {
-    user_name: '_slickRick',
+    username: '_slickRick',
     email: 'ricardo@rick.com',
     password: 'phx12345',
     team_id: 1,
@@ -90,7 +82,7 @@ const Playerdata = [
    
   },
   {
-    user_name: 'super_nikki',
+    username: 'super_nikki',
     email: 'nikki@nikki.com',
     password: 'phx12345',
     team_id: 1,
@@ -98,7 +90,7 @@ const Playerdata = [
    
   },
   {
-    user_name: 'hiflying_Latoya',
+    username: 'hiflying_Latoya',
     email: 'LadyX@toya.com',
     password: 'phx12345',
     team_id: 1,
