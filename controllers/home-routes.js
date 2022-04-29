@@ -32,14 +32,14 @@ router.get('/Team/:id', async (req, res) => {
     const dbflagfootball = await Team.findByPk(req.params.id, {
       include: [
         {
-          model: Painting,
+          model: Player,
           attributes: [
             'id',
-            'title',
-            'artist',
-            'exhibition_date',
-            'filename',
-            'description',
+            'username',
+            'email',
+            'password',
+            'team_id'
+            
           ],
         },
       ],
@@ -53,13 +53,13 @@ router.get('/Team/:id', async (req, res) => {
   }
 });
 
-// GET one painting
-router.get('/painting/:id', async (req, res) => {
+// GET one player
+router.get('/player/:id', async (req, res) => {
   try {
-    const dbPaintingData = await Painting.findByPk(req.params.id);
+    const dbplayerData = await player.findByPk(req.params.id);
 
-    const painting = dbPaintingData.get({ plain: true });
-    res.render('painting', { painting, loggedIn: req.session.loggedIn });
+    const player = dbplayerData.get({ plain: true });
+    res.render('player', { player, loggedIn: req.session.loggedIn });
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
