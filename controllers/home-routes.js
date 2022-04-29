@@ -4,21 +4,21 @@ const { Team, Player } = require('../models');
 // GET all teams for homepage
 router.get('/', async (req, res) => {
   try {
-    const flagfootballdb = await Team.findAll({
-      include: [
-        {
-          model: Player,
-          attributes: ['name', 'team_name'],
-        },
-      ],
-    });
+    const flagfootballdb = await Team.findAll(
+      // include: [
+      //   {
+      //     model: Player,
+      //     attributes: ['username', 'team_id'],
+      //   },
+      // ],
+    );
 
-    const teams = flagfootballdb.map((Team) =>
-      Team.get({ plain: true })
+    const teams = flagfootballdb.map((team) =>
+      team.get({ plain: true })
     );
     res.render('homepage', {
       teams,
-      loggedIn: req.session.loggedIn,
+      // loggedIn: req.session.loggedIn,
     });
   } catch (err) {
     console.log(err);
