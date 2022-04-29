@@ -8,12 +8,12 @@ router.get('/', async (req, res) => {
       include: [
         {
           model: Player,
-          attributes: ['filename', 'description'],
+          attributes: ['name', 'team_name'],
         },
       ],
     });
 
-    const teams = dbflagfootball.map((Team) =>
+    const teams = flagfootballdb.map((Team) =>
       Team.get({ plain: true })
     );
     res.render('homepage', {
@@ -29,7 +29,7 @@ router.get('/', async (req, res) => {
 // GET one Team
 router.get('/Team/:id', async (req, res) => {
   try {
-    const dbflagfootball = await Team.findByPk(req.params.id, {
+    const flagfootballdb = await Team.findByPk(req.params.id, {
       include: [
         {
           model: Player,
@@ -45,7 +45,7 @@ router.get('/Team/:id', async (req, res) => {
       ],
     });
 
-    const Team = dbflagfootball.get({ plain: true });
+    const Team = flagfootballdb.get({ plain: true });
     res.render('Team', { Team, loggedIn: req.session.loggedIn });
   } catch (err) {
     console.log(err);
