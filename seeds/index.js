@@ -1,13 +1,14 @@
+const router = require('express').Router();
 const sequelize = require('../config/connection');
-const seedGallery = require('./galleryData');
-const seedPaintings = require('./paintingData');
+const seedTeams = require('./teamData');
+const seedPlayers = require('./playerData');
 
 const seedAll = async () => {
   await sequelize.sync({ force: true });
 
-  await seedGallery();
+  await seedTeams();
 
-  await seedPaintings();
+  await seedPlayers();
 
   process.exit(0);
 };

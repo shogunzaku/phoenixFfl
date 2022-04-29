@@ -1,5 +1,7 @@
 const { Model, DataTypes } = require('sequelize');
+const router = require('express').Router();
 const sequelize = require('../config/connection');
+
 
 class Team extends Model {}
 
@@ -20,11 +22,11 @@ Team.init(
       allowNull: false,
     },
     wins: {
-      type: DataTypes.BOOLEAN,
+      type: DataTypes.INTEGER,
       allowNull: false,
     },
     loses: {
-      type: DataTypes.BOOLEAN,
+      type: DataTypes.INTEGER,
       allowNull: false,
     },
   },
