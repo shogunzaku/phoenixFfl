@@ -1,4 +1,4 @@
-<div class="menu-container">
+
   <div class="card-header col-md-12 text-center">
       <p>Youth tackle football athletes experienced a median of 378 head impacts per athlete during the season.
 Flag football athletes experienced a median of 8 eight head impacts per athlete during the season.
@@ -8,25 +8,24 @@ These findings suggest that non-contact or flag football programs may be a safer
     </h2>
   </div>
   {{#each teams as |team|}}
-  <div class="team col-md-4">
-    <p>
-      {{team.id}}.
-      {{team.team_name}}
-    </p>
-  </div>
-  <div class="col-md-5">
-   
-  </div>
-  {{!-- <div class="col-md-3">
-    🥜: {{#if team.has_nuts}} Contains nuts {{else}} No nuts {{/if}}
-  </div> --}}
-  {{/each}}
-  <!-- This is the form for adding a new team -->
-  <div class="add-team-container">
+
+
+  {{!-- <img src="..." class="card-img-top" alt="..."> --}}
+  <div class="card-body">
+    <h5 class="card-title">
+      {{team.team_name}}</h5>
     
-    </form>
+    <a href="./layouts/loginauth.handlebars" class="btn btn-primary">Join Team</a>
   </div>
-</div>
+
+
+    
+ 
+  
+ 
+ 
+  {{/each}}
+ 
 
 
 

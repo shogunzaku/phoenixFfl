@@ -34,7 +34,6 @@ router.get('/Team/:id', async (req, res) => {
         {
           model: Player,
           attributes: [
-            'id',
             'username',
             'email',
             'password',

@@ -24,7 +24,7 @@ const Teamdata = [
   },
   {
     team_id: 4,
-    team_name: 'Hurricanes',
+    team_name: 'The Hurricanes',
     team_color: 'Grey and Purple',
     wins: 10,
     loses:1,
