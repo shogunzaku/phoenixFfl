@@ -16,10 +16,7 @@ Player.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    username: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
+    
     email: {
       type: DataTypes.STRING,
       allowNull: false,
