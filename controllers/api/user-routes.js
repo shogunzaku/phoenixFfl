@@ -4,14 +4,13 @@ const { User } = require('../../models');
 // CREATE new user
 router.post('/', async (req, res) => {
   try {
-    const dbflagfootball = await User.create({
-      username: req.body.username,
-      email: req.body.email,
-      password: req.body.password,
-    });
+    const dbflagfootball = await User.create(
+     req.body
+    );
 
     req.session.save(() => {
-      req.session.loggedIn = true;
+      req.session.player_id = dbflagfootball.id;
+      req.session.logged_in = true;
 
       res.status(200).json(dbflagfootball);
     });
@@ -47,11 +46,10 @@ router.post('/login', async (req, res) => {
     }
 
     req.session.save(() => {
-      req.session.loggedIn = true;
-
-      res
-        .status(200)
-        .json({ user: dbflagfootball, message: 'You are now logged in!' });
+      req.session.player_id = dbflagfootball.id;
+      req.session.logged_in = true;
+      res.status(200)
+      res.json({ user: dbflagfootball, message: 'You are now logged in!' });
     });
   } catch (err) {
     console.log(err);
@@ -61,7 +59,7 @@ router.post('/login', async (req, res) => {
 
 // Logout
 router.post('/logout', (req, res) => {
-  if (req.session.loggedIn) {
+  if (req.session.logged_in) {
     req.session.destroy(() => {
       res.status(204).end();
     });
