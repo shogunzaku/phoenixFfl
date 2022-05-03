@@ -5,6 +5,7 @@ const { Team, Player } = require('../models');
 router.get('/', async (req, res) => {
   try {
     const flagfootballdb = await Team.findAll(
+      console.log('emilys the best')
       // include: [
       //   {
       //     model: Player,
