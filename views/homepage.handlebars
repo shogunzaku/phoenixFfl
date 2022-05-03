@@ -9,14 +9,37 @@ These findings suggest that non-contact or flag football programs may be a safer
   </div>
   {{#each teams as |team|}}
 
+{{#each players as |player|}}
 
   {{!-- <img src="..." class="card-img-top" alt="..."> --}}
-  <div class="card-body">
+ {{/each}}
+  <div class="card-body">{{player.username-input-login}}
     <h5 class="card-title">
       {{team.team_name}}</h5>
+      <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        View players
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <li><a class="dropdown-item" href="/seeds/playerData.js/:username">Action</a></li>
+ 
+      </ul>
+</div>
+        {{!-- <button class="btn btn-primary">
+      View players
+    </button> --}}
     
     <a href="./layouts/loginauth.handlebars" class="btn btn-primary">Join Team</a>
   </div>
+  {{/each}}
+ 
+  {{!-- {{/each}} --}}
+
+  {{!-- <div>  --}}
+    {{!-- <button class="btn btn-primary">
+      View players
+    </button> --}}
+  {{!-- </div> --}}
 
 
     
@@ -24,7 +47,6 @@ These findings suggest that non-contact or flag football programs may be a safer
   
  
  
-  {{/each}}
  
 
 
