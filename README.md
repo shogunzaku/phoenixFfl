@@ -33,4 +33,4 @@ To install this application, clone the code into your terminal for the respectiv
 
 # Heroku Link
 
-https://dashboard.heroku.com/apps/pffl-prj2
+https://pffl-prj2.herokuapp.com/
